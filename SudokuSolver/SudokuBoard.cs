@@ -50,6 +50,19 @@ namespace SudokuSolver {
       }
       return status;
     }
+	
+	public override string ToString(){
+		StringBuilder sb = new();
+		for(int i = 0; i < size; i++){
+			for(int j= 0; j < size; j++){
+				sb.Append(board[i,j]);
+				sb.Append(" ");
+			}
+			sb.AppendLine();
+		}
+		
+		return sb.ToString)();
+	}
 
     private BoardStatus CheckRow(int row) {
       BoardStatus status = BoardStatus.Solved;

@@ -25,8 +25,13 @@ namespace SudokuSolver {
       Console.Write("This Sudoku is ... ");
       bool solved = SudokuSolver.Solve(board);
       Console.WriteLine($"{(solved ? "SOLVED" : "UNSOLVABLE")}");
+	  Console.WriteLine(board.ToString());
+<<<<<<< HEAD
       Console.WriteLine();
       Console.WriteLine("Bye.");
+=======
+	  
+>>>>>>> c3357f3 (Add console output of solved board)
     }
   }
 }
